@@ -5,5 +5,5 @@ module.exports={
     },
     session:{
         cookieKey:"harshdograekachaladkahai"
-    }
+    },
 }

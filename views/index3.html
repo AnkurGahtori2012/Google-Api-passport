@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HangMan Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="flex-container">
+        <!-- ------------------------------------------------------------------------------------------------------------- -->
+        <div class="row">
+            <div class="col-lg-12  text-center question">
+                <!-- question(hint) -->
+                <h1 class="display-1" id="hint"></h1>
+
+            </div>
+        </div>
+        <br><br>
+        <div class="row justify-content-center" id="suggestion">
+        </div>
+        <!-- ------------------------------------------------------------------------------------------------------------- -->
+        <div class="row d-flex ">
+            <div class="col-lg-8">
+                <div class="row" id="alphabet">
+
+                    <!-- keyboard -->
+
+
+                    <button class="btn-lg btn-primary btn-space A" value="A" onclick="validate('A')">A</button>
+                    <button class="btn-lg btn-primary btn-space B" value="B" onclick="validate('B')">B</button>
+                    <button class="btn-lg btn-primary btn-space C" value="C" onclick="validate('C')">C</button>
+                    <button class="btn-lg btn-primary btn-space D" value="D" onclick="validate('D')">D</button>
+                    <button class="btn-lg btn-primary btn-space E" value="E" onclick="validate('E')">E</button>
+                    <button class="btn-lg btn-primary btn-space F" value="F" onclick="validate('F')">F</button>
+                    <button class="btn-lg btn-primary btn-space G" value="G" onclick="validate('G')">G</button>
+                    <button class="btn-lg btn-primary btn-space H" value="H" onclick="validate('H')">H</button>
+                    <button class="btn-lg btn-primary btn-space I" value="I" onclick="validate('I')">I</button>
+                    <button class="btn-lg btn-primary btn-space J" value="J" onclick="validate('J')">J</button>
+                    <button class="btn-lg btn-primary btn-space K" value="K" onclick="validate('K')">K</button>
+                    <button class="btn-lg btn-primary btn-space L" value="L" onclick="validate('L')">L</button>
+                    <button class="btn-lg btn-primary btn-space M" value="M" onclick="validate('M')">M</button>
+                    <button class="btn-lg btn-primary btn-space N" value="N" onclick="validate('N')">N</button>
+                    <button class="btn-lg btn-primary btn-space O" value="O" onclick="validate('O')">O</button>
+                    <button class="btn-lg btn-primary btn-space P" value="P" onclick="validate('P')">P</button>
+                    <button class="btn-lg btn-primary btn-space Q" value="Q" onclick="validate('Q')">Q</button>
+                    <button class="btn-lg btn-primary btn-space R" value="R" onclick="validate('R')">R</button>
+                    <button class="btn-lg btn-primary btn-space S" value="S" onclick="validate('S')">S</button>
+                    <button class="btn-lg btn-primary btn-space T" value="T" onclick="validate('T')">T</button>
+                    <button class="btn-lg btn-primary btn-space U" value="U" onclick="validate('U')">U</button>
+                    <button class="btn-lg btn-primary btn-space V" value="V" onclick="validate('V')">V</button>
+                    <button class="btn-lg btn-primary btn-space W" value="W" onclick="validate('W')">W</button>
+                    <button class="btn-lg btn-primary btn-space X" value="X" onclick="validate('X')">X</button>
+                    <button class="btn-lg btn-primary btn-space Y" value="Y" onclick="validate('Y')">Y</button>
+                    <button class="btn-lg btn-primary btn-space Z" value="Z" onclick="validate('Z')">Z</button>
+
+
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <img src="s1.png" alt="Your Status" class="rounded" id="hungman">
+            </div>
+        </div>
+
+        <!-- ------------------------------------------------------------------------------------------------------------- -->
+
+        <div class="row" id="howtoplay">
+            <div class="col-lg-12 ">
+                <h5>
+                    <b> How to play:<br></b>
+                    You have to guess the word with given HINT at top of page.
+                    Word having number of Character that fits in above given blank spaces.
+                    For every right guess black space will be replaced by that Character and for wrong guess your one
+                    chance is reduced out of 7.
+                </h5>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

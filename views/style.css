@@ -1,0 +1,35 @@
+body{
+    background-color: #ec8b5e !important;
+    
+    }
+
+.option{
+    margin-left:30px;
+    /* background-color: rgb(255, 0, 0); */
+    padding:0;
+    font-size: 2em;
+    width:1em;
+    color:green;
+}
+#alphabet {
+    margin:50px 50px;
+    font-size: 4em;
+    text-align: center;
+}
+
+.rounded{
+    position: relative;
+    height: 250px;
+}
+#howtoplay{
+   margin: auto;
+}
+.flex-container{
+    /* background-color: #ec8b5e; */
+
+    height: 100%;
+}
+#suggestion{
+    text-align: center;
+    font-size: 2em;
+}
